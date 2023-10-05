@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Galeria de Imagens</h1>
+    <div class="input-container">
+        <input type="text" id="image-url" placeholder="Cole a URL da imagem aqui" oninput="previewImage()">
+        <input class="image-gallery" type="file" id="image-upload" accept="image/*" onchange="previewImage()">
+        <button onclick="addImage()">Adicionar</button>
+    </div>
+    <div id="image-preview"></div>
+    <div class="image-gallery" id="image-gallery"></div>
+    <script src="script.js"></script>
+</body>
+</html>
